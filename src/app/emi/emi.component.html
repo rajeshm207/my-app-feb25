@@ -1,0 +1,11 @@
+<div>
+<h3>Principal Amount:</h3>
+<input type="number" [(ngModel)]="principal"><br>
+<h3>Interest Rate(monthly):</h3>
+<input type="number"  [(ngModel)]="interest"><br>
+<h3>No Of Installments(months):</h3>
+<input type="number"  [(ngModel)]="time"><br>
+<button (click)="emi()">EMI</button>
+<h4>{{monthlyInterest}}</h4>
+
+</div>

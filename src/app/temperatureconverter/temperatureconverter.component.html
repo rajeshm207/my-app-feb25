@@ -1,0 +1,6 @@
+<div class="temp">
+    <h3>Celsius:</h3>
+    <input type="number" [(ngModel)]="num1"><br><br>
+    <button class="button" (click)="fahrenheit()" [disabled]="!num1">Fahrenheit</button>
+    <h4>{{result}}</h4>
+</div>

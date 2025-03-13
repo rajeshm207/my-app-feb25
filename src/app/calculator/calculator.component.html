@@ -1,0 +1,12 @@
+<div class="cal">
+    <label>Number1</label><br>
+    <input type="number" [(ngModel)]="num1"><br>
+    <label> Number2</label><br>
+    <input type="number" [(ngModel)]="num2"><br>
+    <button class="button" (click)="sum()" [disabled]="!num1 || !num2">Sum</button>
+    <button class="button" (click)="sub()" [disabled]="!num1 || !num2">Sub</button>
+    <button class="button" (click)="mul()" [disabled]="!num1 || !num2" >Mul</button>
+    <button class="button" (click)="div()" [disabled]="!num1 || !num2">Div</button>
+    <h3 id="result">{{result}}</h3>
+</div>
+

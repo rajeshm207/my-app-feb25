@@ -1,0 +1,20 @@
+.rect{
+    margin: 150px;
+    text-align: center;
+    height: 43%;
+    width:30% ;
+    background-color: aliceblue;
+    justify-content: center;
+    padding-top: 2%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    border: 2px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button{
+    background-color: green;
+    height: 30px;
+    width: 180px;
+    border-radius: 5px;
+    color: white;
+}

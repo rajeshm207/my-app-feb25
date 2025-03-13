@@ -1,0 +1,9 @@
+<div class="rect">
+    <h3>Length:</h3>
+    <input type="number" [(ngModel)]="num1">
+    <h3>Breadth:</h3>
+    <input type="number" [(ngModel)]="num2"><br><br>
+    <button class="button" (click)="area()" [disabled]="!num1 || !num2">Area of Rectangle</button><br><br>
+    <button class="button" (click)="peri()" [disabled]="!num1 || !num2">Perimeter</button>
+    <h5> Result:{{result}}</h5>
+</div>
