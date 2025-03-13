@@ -19,6 +19,7 @@ import { TemperatureconverterComponent } from './temperatureconverter/temperatur
 import { EmiComponent } from './emi/emi.component';
 import { SimpleinterestrateComponent } from './simpleinterestrate/simpleinterestrate.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { EmployeesComponent } from './employees/employees.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { DirectivesComponent } from './directives/directives.component';
     TemperatureconverterComponent,
     EmiComponent,
     SimpleinterestrateComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    EmployeesComponent
   ],
   imports: [
     BrowserModule,
