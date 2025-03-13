@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { TemperatureconverterComponent } from './temperatureconverter/temperatureconverter.component';
 import { EmiComponent } from './emi/emi.component';
 import { SimpleinterestrateComponent } from './simpleinterestrate/simpleinterestrate.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { SimpleinterestrateComponent } from './simpleinterestrate/simpleinterest
     HomeComponent,
     TemperatureconverterComponent,
     EmiComponent,
-    SimpleinterestrateComponent
+    SimpleinterestrateComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,

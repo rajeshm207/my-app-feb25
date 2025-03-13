@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { TemperatureconverterComponent } from './temperatureconverter/temperatureconverter.component';
 import { EmiComponent } from './emi/emi.component';
 import { SimpleinterestrateComponent } from './simpleinterestrate/simpleinterestrate.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 const routes: Routes = [
   {path:'login' ,component:LoginComponent},
@@ -23,7 +24,8 @@ const routes: Routes = [
     {path:'calculator',component:CalculatorComponent},{path:'rectangle',component:RectangleComponent},
     {path:'circle',component:CircleComponent},{path:'bmi',component:BmiComponent},
     {path:'home',component:HomeComponent},{path:'temperatureconverter',component:TemperatureconverterComponent},
-    {path:'emi',component:EmiComponent},{path:'simpleinterestrate',component:SimpleinterestrateComponent}
+    {path:'emi',component:EmiComponent},{path:'simpleinterestrate',component:SimpleinterestrateComponent},
+    {path:'directives',component:DirectivesComponent}
   ]},
   {path:'' ,component:LoginComponent},//default routing
   {path:'**',component:Erorr404Component} //wild-card routing
