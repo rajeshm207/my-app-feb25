@@ -16,6 +16,7 @@ import { EmiComponent } from './emi/emi.component';
 import { SimpleinterestrateComponent } from './simpleinterestrate/simpleinterestrate.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
 
 const routes: Routes = [
   {path:'login' ,component:LoginComponent},
@@ -27,7 +28,8 @@ const routes: Routes = [
     {path:'home',component:HomeComponent},{path:'temperatureconverter',component:TemperatureconverterComponent},
     {path:'emi',component:EmiComponent},{path:'simpleinterestrate',component:SimpleinterestrateComponent},
     {path:'directives',component:DirectivesComponent},
-    {path:'employee',component:EmployeesComponent}
+    {path:'employee',component:EmployeesComponent},
+    {path:'flipkart',component:FlipkartComponent}
   ]},
   {path:'' ,component:LoginComponent},//default routing
   {path:'**',component:Erorr404Component} //wild-card routing

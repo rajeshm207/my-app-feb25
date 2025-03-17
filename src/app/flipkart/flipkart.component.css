@@ -1,0 +1,28 @@
+table{
+    background-color: azure;
+}
+#head{
+    text-align: center;
+    color: white;
+}
+.header{
+    background-color: rgb(14, 198, 14);
+    color: white;
+}
+.button{
+    background-color: yellow;
+    border-radius: 5PX;
+    color: blue;
+    height: 35PX;
+}
+.buttonn{
+    background-color: aqua;
+    border-radius: 5px;
+    height: 25px;
+}
+.cart{
+    background-color: rgb(91, 87, 83);
+    color: white;
+    border-radius: 3px;
+    height: 20px;
+}

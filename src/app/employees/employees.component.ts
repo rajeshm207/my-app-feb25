@@ -22,5 +22,46 @@ export class EmployeesComponent {
   delete(i:number){
     this.employees.splice(i,1)
   }
+  sort(){
+    this.employees.sort((a:any,b:any)=>a.package-b.package)
+  }
+
+  // filter
+  role:string='';
+  filter(){
+    this.employees= this.employees.filter((employee:any)=>employee.role==this.role)
+  }
+  // search(filter)
+  term:string='';
+  search(){
+  this.employees=this.employees.filter((employee:any)=>employee.name.includes(this.term));
+  }
+  // map
+  map(){
+    this.employees=this.employees.map((employee:any)=>{
+      employee.package=employee.package+30000;
+      return employee;
+    })
+  }
+// reduce
+reduce(){
+  let totalcost=this.employees.reduce((sum:any,employee:any)=>sum+employee.package,0);
+  alert(totalcost)
+}
+// create
+name:string='';
+experince:number=0;
+package:number=0;
+empRole:string='';
+create(){
+  let employee={
+    name:this.name,
+    experince:this.experince,
+    package:this.package,
+    role:this.empRole
+
+  }
+  this.employees.unshift(employee);
+}
 
 }

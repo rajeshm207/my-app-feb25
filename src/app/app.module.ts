@@ -20,6 +20,7 @@ import { EmiComponent } from './emi/emi.component';
 import { SimpleinterestrateComponent } from './simpleinterestrate/simpleinterestrate.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { EmployeesComponent } from './employees/employees.component';
     EmiComponent,
     SimpleinterestrateComponent,
     DirectivesComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    FlipkartComponent
   ],
   imports: [
     BrowserModule,
