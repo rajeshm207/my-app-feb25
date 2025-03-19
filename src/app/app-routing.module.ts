@@ -17,6 +17,10 @@ import { SimpleinterestrateComponent } from './simpleinterestrate/simpleinterest
 import { DirectivesComponent } from './directives/directives.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { AccountsComponent } from './accounts/accounts.component';
+import { AmazonComponent } from './amazon/amazon.component';
+import { PinterestComponent } from './pinterest/pinterest.component';
 
 const routes: Routes = [
   {path:'login' ,component:LoginComponent},
@@ -29,7 +33,11 @@ const routes: Routes = [
     {path:'emi',component:EmiComponent},{path:'simpleinterestrate',component:SimpleinterestrateComponent},
     {path:'directives',component:DirectivesComponent},
     {path:'employee',component:EmployeesComponent},
-    {path:'flipkart',component:FlipkartComponent}
+    {path:'flipkart',component:FlipkartComponent},
+    {path:'vehicle',component:VehicleComponent},
+    {path:'accounts',component:AccountsComponent},
+    {path:'amazon',component:AmazonComponent},
+    {path:'pinterest',component:PinterestComponent}
   ]},
   {path:'' ,component:LoginComponent},//default routing
   {path:'**',component:Erorr404Component} //wild-card routing

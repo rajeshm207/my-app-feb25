@@ -5,10 +5,10 @@
 <input type="text" [(ngModel)]="price"><br>
 <label>Rating:</label>
 <input type="text" [(ngModel)]="rating"><br>
-<label>free Delivery:</label>
-<input type="radio" [(ngModel)]="freedelivery">
+<label>Free Delivery:</label>
+<input type="radio" name="value" [(ngModel)]="freedelivery">
 <label>Yes</label>
-<input type="radio" [(ngModel)]="freedelivery">
+<input type="radio" name="value" [(ngModel)]="freedelivery">
 <label>No</label>
 <button (click)="create()">Create product</button>
 <button (click)="sort()" class="button">Price Low to High</button>

@@ -31,7 +31,7 @@ export class FlipkartComponent {
       productname:this.productname,
       price:this.price,
       rating:this.rating,
-      freedeliver:this.freedelivery
+      freedelivery:this.freedelivery
 
     }
     this.products.unshift(product);

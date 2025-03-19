@@ -1,0 +1,36 @@
+.bodymain{
+    background-color: whitesmoke;
+    height:100%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+#parent{
+
+    width: 400px;
+    overflow: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+.image{
+    height: 180px;
+    width:380px ;
+    align-content: center;
+
+}
+.d4{
+    color: red;
+}
+.d6{
+    height:30px ;
+    width: 35px;
+    background-color:whitesmoke;
+    position: absolute;
+    margin-top: -2.5cap;
+}
+
+
+
+

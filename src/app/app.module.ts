@@ -21,6 +21,11 @@ import { SimpleinterestrateComponent } from './simpleinterestrate/simpleinterest
 import { DirectivesComponent } from './directives/directives.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AccountsComponent } from './accounts/accounts.component';
+import { AmazonComponent } from './amazon/amazon.component';
+import { PinterestComponent } from './pinterest/pinterest.component';
 
 @NgModule({
   declarations: [
@@ -41,12 +46,17 @@ import { FlipkartComponent } from './flipkart/flipkart.component';
     SimpleinterestrateComponent,
     DirectivesComponent,
     EmployeesComponent,
-    FlipkartComponent
+    FlipkartComponent,
+    VehicleComponent,
+    AccountsComponent,
+    AmazonComponent,
+    PinterestComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-  FormsModule
+  FormsModule,
+  HttpClientModule
     
   ],
   providers: [],
