@@ -31,6 +31,7 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { StudentidComponent } from './studentid/studentid.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentformComponent } from './studentform/studentform.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { StudentformComponent } from './studentform/studentform.component';
     CreateAccountComponent,
     StudentidComponent,
     CreateUserComponent,
-    StudentformComponent
+    StudentformComponent,
+    VehicleDetailsComponent
   ],
   imports: [
     BrowserModule,

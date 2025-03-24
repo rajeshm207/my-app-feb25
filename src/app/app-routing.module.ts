@@ -26,6 +26,7 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { StudentidComponent } from './studentid/studentid.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentformComponent } from './studentform/studentform.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 const routes: Routes = [
   {path:'login' ,component:LoginComponent},
@@ -47,7 +48,8 @@ const routes: Routes = [
     {path:'create-account',component:CreateAccountComponent},
     {path:'studentid',component:StudentidComponent},
     {path:'create-user',component:CreateUserComponent},
-    {path:'studentform',component:StudentformComponent}
+    {path:'studentform',component:StudentformComponent},
+    {path:'vehicle-details/:id',component:VehicleDetailsComponent},
   ]},
   {path:'' ,component:LoginComponent},//default routing
   {path:'**',component:Erorr404Component} //wild-card routing

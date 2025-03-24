@@ -35,7 +35,8 @@
             <th>Color</th>
             <th>Cost</th>
             <th>Fuel</th>
-            <th>Action</th>
+            
+            <th colspan="2">Action</th>
         </tr>
     </thead>
     <tbody>
@@ -45,6 +46,10 @@
             <td>{{vehicle.color}}</td>
             <td>{{vehicle.cost}}</td>
             <td>{{vehicle.fuel}}</td>
+           
+            <td>
+                <button routerLink="/dashboard/vehicle-details/{{vehicle.id}}">View</button>
+            </td>
             <td>
                 <button (click)="delete(vehicle.id)" class="btn btn-danger">Delete</button>
             </td>
