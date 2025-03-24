@@ -50,6 +50,7 @@ const routes: Routes = [
     {path:'create-user',component:CreateUserComponent},
     {path:'studentform',component:StudentformComponent},
     {path:'vehicle-details/:id',component:VehicleDetailsComponent},
+    {path:'edit-vehicle/:id',component:CreateVehicleComponent},
   ]},
   {path:'' ,component:LoginComponent},//default routing
   {path:'**',component:Erorr404Component} //wild-card routing
