@@ -1,0 +1,25 @@
+<h1>Student ID</h1>
+<input type="text" [(ngModel)]="term" (keyup)="filter()" placeholder="Enter Student Details">
+<div class="parent">
+    <div id="card" *ngFor="let student of studentid">
+        <div class="top">
+           
+            <div class="logo"><img class="img1" src={{student.school_logo}} ></div>
+            <div class="heading"><h4>school Name:{{student.school_name}}</h4></div>
+            
+        </div>
+        <div class="content">
+            <div class="image"><img class="img2" src={{student.profile_picture}} alt=""></div>
+            <div class="details">
+                <label>Name:{{student.name}}</label><br>
+                <label>Phone:{{student.phone}}</label><br>
+                <label>City:{{student.city}}</label><br>
+                <label>DOB:{{student.dob}}</label><br>
+                <label>Email:{{student.email}}</label><br>
+                <label></label>
+                <label></label>
+
+            </div>
+        </div>
+    </div>
+</div>

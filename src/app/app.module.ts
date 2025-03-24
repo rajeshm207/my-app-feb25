@@ -14,7 +14,7 @@ import { CircleComponent } from './circle/circle.component';
 import { BmiComponent } from './bmi/bmi.component';
 import { MywebsiteComponent } from './mywebsite/mywebsite.component';
 import { HomeComponent } from './home/home.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TemperatureconverterComponent } from './temperatureconverter/temperatureconverter.component';
 import { EmiComponent } from './emi/emi.component';
 import { SimpleinterestrateComponent } from './simpleinterestrate/simpleinterestrate.component';
@@ -26,6 +26,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { AccountsComponent } from './accounts/accounts.component';
 import { AmazonComponent } from './amazon/amazon.component';
 import { PinterestComponent } from './pinterest/pinterest.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { StudentidComponent } from './studentid/studentid.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { StudentformComponent } from './studentform/studentform.component';
 
 @NgModule({
   declarations: [
@@ -50,13 +55,19 @@ import { PinterestComponent } from './pinterest/pinterest.component';
     VehicleComponent,
     AccountsComponent,
     AmazonComponent,
-    PinterestComponent
+    PinterestComponent,
+    CreateVehicleComponent,
+    CreateAccountComponent,
+    StudentidComponent,
+    CreateUserComponent,
+    StudentformComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
   FormsModule,
-  HttpClientModule
+  HttpClientModule,
+  ReactiveFormsModule
     
   ],
   providers: [],

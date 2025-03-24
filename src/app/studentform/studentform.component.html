@@ -1,0 +1,57 @@
+<h2>Student Form</h2>
+<form [formGroup]="studentForm">
+    <label>Name:</label>
+    <input type="text" formControlName="name"><br>
+    <label>Class:</label>
+    <input type="number" formControlName="class"><br>
+    <label>Father Name:</label>
+    <input type="text" formControlName="fathername"><br>
+    <label>Email:</label>
+    <input type="email" formControlName="email"><br>
+    <label>Date of Birth:</label>
+    <input type="date" formControlName="dob"><br>
+    <div formGroupName="address">
+        <label>Address Line:</label>
+        <input type="text" formControlName="addressLine"><br>
+        <label>City:</label>
+        <input type="text" formControlName="city"><br>
+        <label>State:</label>
+        <input type="text" formControlName="state"><br>
+        <label>Pincode:</label>
+        <input type="number" formControlName="pincode"><br>
+    </div>
+    <label>Marks</label>
+    <button (click)="addmarks()" class="btn btn-warning ">Add Marks</button><br><br>
+    <div formArrayName="marks">
+        <div *ngFor="let Marks of marksFormArray.controls;let i=index">
+            <div formGroupName="{{i}}">
+                <h3>Card{{i+1}}</h3>
+                <label>Class:</label>
+                <input type="number" formControlName="class"><br>
+                <label>Year:</label>
+                <input type="month" formControlName="year"><br>
+                <label>Percentage:</label>
+                <input type="number" formControlName="percentage"><br>
+                <button (click)="deletemarks(i)" class="btn btn-danger">Remove Card</button>
+
+            </div>
+        </div>
+    </div>
+
+    <label>Type:</label>
+    <input type="radio" name="type" formControlName="type" value="dayScholar">
+    <label>Dayscholar</label>
+    <input type="radio" name="type" formControlName="type" value="residential">
+    <label>Residential</label><br>
+    <div *ngIf="studentForm.get('type')?.value=='dayScholar'">
+        <label>Bus Fee:</label>
+        <input type="number" formControlName="busFee">
+    </div>
+    <div *ngIf="studentForm.get('type')?.value=='residential'">
+        <label>Hostel Fee:</label>
+        <input type="number" formControlName="hostelFee">
+    </div>
+
+
+    <button (click)="submit()" class="btn btn-info">Submit</button>
+</form>

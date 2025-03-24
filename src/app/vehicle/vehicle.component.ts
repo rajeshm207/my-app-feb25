@@ -49,10 +49,11 @@ export class VehicleComponent {
   }
 
   delete(id:any){
-    if(confirm("Are you sure to Delete?")){
+    if(confirm("Are you sure to Delete?")==true){
       this._vehicleService.deleteVehicle(id).subscribe(
         (data:any)=>{
           alert("Record Deleted Successfully!");
+          this.loadVehicle();
         },(err:any)=>{
           alert("Internal server Error!");
         }

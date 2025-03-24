@@ -21,6 +21,11 @@ import { VehicleComponent } from './vehicle/vehicle.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { AmazonComponent } from './amazon/amazon.component';
 import { PinterestComponent } from './pinterest/pinterest.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { StudentidComponent } from './studentid/studentid.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { StudentformComponent } from './studentform/studentform.component';
 
 const routes: Routes = [
   {path:'login' ,component:LoginComponent},
@@ -37,7 +42,12 @@ const routes: Routes = [
     {path:'vehicle',component:VehicleComponent},
     {path:'accounts',component:AccountsComponent},
     {path:'amazon',component:AmazonComponent},
-    {path:'pinterest',component:PinterestComponent}
+    {path:'pinterest',component:PinterestComponent},
+    {path:'create-vehicle',component:CreateVehicleComponent},
+    {path:'create-account',component:CreateAccountComponent},
+    {path:'studentid',component:StudentidComponent},
+    {path:'create-user',component:CreateUserComponent},
+    {path:'studentform',component:StudentformComponent}
   ]},
   {path:'' ,component:LoginComponent},//default routing
   {path:'**',component:Erorr404Component} //wild-card routing

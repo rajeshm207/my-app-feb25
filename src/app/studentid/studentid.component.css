@@ -1,0 +1,64 @@
+.parent{
+    background-color: blueviolet;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#card{
+    background-color: orange;
+    height:45% ;
+    width:40% ;
+    border-radius: 10px;
+    
+}
+.top{
+   
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo{
+    background-color: red;
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+}
+.heading{
+    background-color: rgb(146, 128, 93);
+    width: 70%;
+    height: 100%;
+
+}
+.content{
+    background-color: cadetblue;
+    height: 60%;
+    width: 100%;
+    display: flex;
+}
+.image{
+    background-color: yellow;
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+    
+}
+.details{
+    background-color: chocolate;
+    height: 100%;
+    width: 70%;
+}
+.img1{
+    height: 130px;
+    width: 180px;
+    
+
+}
+.img2{
+    height: 185px;
+    width: 200px;
+
+
+}
