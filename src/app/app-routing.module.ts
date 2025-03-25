@@ -27,20 +27,26 @@ import { StudentidComponent } from './studentid/studentid.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentformComponent } from './studentform/studentform.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { AuthenticationGuard } from './authentication.guard';
 
 const routes: Routes = [
   {path:'login' ,component:LoginComponent},
  
-  {path:'dashboard' ,component:DashboardComponent,children:[
-    {path:'welcome',component:WelocmeComponent},{ path:'databinding', component:DatabindingComponent},
-    {path:'calculator',component:CalculatorComponent},{path:'rectangle',component:RectangleComponent},
-    {path:'circle',component:CircleComponent},{path:'bmi',component:BmiComponent},
-    {path:'home',component:HomeComponent},{path:'temperatureconverter',component:TemperatureconverterComponent},
-    {path:'emi',component:EmiComponent},{path:'simpleinterestrate',component:SimpleinterestrateComponent},
+  {path:'dashboard' ,component:DashboardComponent,canActivate:[AuthenticationGuard],children:[
+    {path:'welcome',component:WelocmeComponent},
+    { path:'databinding', component:DatabindingComponent},
+    {path:'calculator',component:CalculatorComponent},
+    {path:'rectangle',component:RectangleComponent},
+    {path:'circle',component:CircleComponent},
+    {path:'bmi',component:BmiComponent},
+    {path:'home',component:HomeComponent},
+    {path:'temperatureconverter',component:TemperatureconverterComponent},
+    {path:'emi',component:EmiComponent},
+    {path:'simpleinterestrate',component:SimpleinterestrateComponent},
     {path:'directives',component:DirectivesComponent},
     {path:'employee',component:EmployeesComponent},
     {path:'flipkart',component:FlipkartComponent},
-    {path:'vehicle',component:VehicleComponent},
+    {path:'vehicle',component:VehicleComponent,canActivate:[AuthenticationGuard]},
     {path:'accounts',component:AccountsComponent},
     {path:'amazon',component:AmazonComponent},
     {path:'pinterest',component:PinterestComponent},
