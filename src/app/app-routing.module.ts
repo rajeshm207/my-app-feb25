@@ -28,6 +28,7 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentformComponent } from './studentform/studentform.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { AuthenticationGuard } from './authentication.guard';
+import { CreatingStudentformComponent } from './creating-studentform/creating-studentform.component';
 
 const routes: Routes = [
   {path:'login' ,component:LoginComponent},
@@ -55,8 +56,10 @@ const routes: Routes = [
     {path:'studentid',component:StudentidComponent},
     {path:'create-user',component:CreateUserComponent},
     {path:'studentform',component:StudentformComponent},
+    {path:'create-studentform',component:CreatingStudentformComponent},
     {path:'vehicle-details/:id',component:VehicleDetailsComponent},
     {path:'edit-vehicle/:id',component:CreateVehicleComponent},
+    
   ]},
   {path:'' ,component:LoginComponent},//default routing
   {path:'**',component:Erorr404Component} //wild-card routing

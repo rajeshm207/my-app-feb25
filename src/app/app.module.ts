@@ -32,6 +32,7 @@ import { StudentidComponent } from './studentid/studentid.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentformComponent } from './studentform/studentform.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { CreatingStudentformComponent } from './creating-studentform/creating-studentform.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
     StudentidComponent,
     CreateUserComponent,
     StudentformComponent,
-    VehicleDetailsComponent
+    VehicleDetailsComponent,
+    CreatingStudentformComponent
   ],
   imports: [
     BrowserModule,

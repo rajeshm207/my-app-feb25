@@ -1,5 +1,6 @@
 <h1>Student ID</h1>
 <input type="text" [(ngModel)]="term" (keyup)="filter()" placeholder="Enter Student Details">
+<button routerLink="/dashboard/create-studentform">Create Student Id</button>
 <div class="parent">
     <div id="card" *ngFor="let student of studentid">
         <div class="top">
@@ -16,10 +17,16 @@
                 <label>City:{{student.city}}</label><br>
                 <label>DOB:{{student.dob}}</label><br>
                 <label>Email:{{student.email}}</label><br>
-                <label></label>
-                <label></label>
+                <label>pin:{{student.school_pin}}</label>
+                
 
             </div>
         </div>
     </div>
+    <div class="button">
+        <button>View</button>
+        <button>Edit</button>
+        <button (click)="delete(studentid.id)">Delete</button>
+    </div>
 </div>
+

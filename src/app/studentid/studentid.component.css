@@ -8,14 +8,14 @@
 }
 #card{
     background-color: orange;
-    height:45% ;
+    height:50% ;
     width:40% ;
     border-radius: 10px;
     
 }
 .top{
    
-    height: 40%;
+    height: 30%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +34,7 @@
 }
 .content{
     background-color: cadetblue;
-    height: 60%;
+    height: 55%;
     width: 100%;
     display: flex;
 }
@@ -61,4 +61,10 @@
     width: 200px;
 
 
+}
+.button{
+    height:15% ;
+    width: 100%;
+    display: flex;
+    
 }
