@@ -33,6 +33,14 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentformComponent } from './studentform/studentform.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { CreatingStudentformComponent } from './creating-studentform/creating-studentform.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { RatingComponent } from './rating/rating.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
+import { AppTextareaComponent } from './app-textarea/app-textarea.component';
+
 
 @NgModule({
   declarations: [
@@ -64,7 +72,15 @@ import { CreatingStudentformComponent } from './creating-studentform/creating-st
     CreateUserComponent,
     StudentformComponent,
     VehicleDetailsComponent,
-    CreatingStudentformComponent
+    CreatingStudentformComponent,
+    Sibling1Component,
+    Sibling2Component,
+    ParentComponent,
+    ChildComponent,
+    RatingComponent,
+    StudentDetailsComponent,
+    AppTextareaComponent,
+   
   ],
   imports: [
     BrowserModule,

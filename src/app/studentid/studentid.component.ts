@@ -45,7 +45,7 @@ export class StudentidComponent {
       this._studentidService.deletestudentid(id).subscribe(
         (data:any)=>{
           alert("Record Deleted Successfully!");
-          this.loadstudentid();
+          
         },(err:any)=>{
           alert("Internal server Error!");
         }

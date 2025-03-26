@@ -21,12 +21,13 @@
                 
 
             </div>
+          </div>
+          <div class="button">
+            <button class="btn btn-info">View</button>
+            <button routerLink="/dashboard/edit-student-details/{{student.id}}" class="=btn btn-primary">Edit</button>
+            <button (click)="delete(student.id)" class="btn btn-danger">Delete</button>
         </div>
     </div>
-    <div class="button">
-        <button>View</button>
-        <button>Edit</button>
-        <button (click)="delete(studentid.id)">Delete</button>
-    </div>
+   
 </div>
 

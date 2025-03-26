@@ -29,6 +29,8 @@ import { StudentformComponent } from './studentform/studentform.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { CreatingStudentformComponent } from './creating-studentform/creating-studentform.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { ParentComponent } from './parent/parent.component';
 
 const routes: Routes = [
   {path:'login' ,component:LoginComponent},
@@ -59,6 +61,8 @@ const routes: Routes = [
     {path:'create-studentform',component:CreatingStudentformComponent},
     {path:'vehicle-details/:id',component:VehicleDetailsComponent},
     {path:'edit-vehicle/:id',component:CreateVehicleComponent},
+    {path:'sibling1',component:Sibling1Component},
+    {path:'parent',component:ParentComponent},
     
   ]},
   {path:'' ,component:LoginComponent},//default routing
