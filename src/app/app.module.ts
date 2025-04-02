@@ -40,6 +40,7 @@ import { ChildComponent } from './child/child.component';
 import { RatingComponent } from './rating/rating.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { AppTextareaComponent } from './app-textarea/app-textarea.component';
+import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 
 
 @NgModule({
@@ -80,6 +81,7 @@ import { AppTextareaComponent } from './app-textarea/app-textarea.component';
     RatingComponent,
     StudentDetailsComponent,
     AppTextareaComponent,
+    LifeCycleHooksComponent,
    
   ],
   imports: [
