@@ -8,6 +8,9 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 export class LifeCycleHooksComponent implements OnChanges,OnInit,DoCheck,AfterViewInit,
 AfterViewChecked,AfterContentInit,AfterContentChecked,OnDestroy {
   interval:any;
+  constructor(){
+    console.log("constructor Running");
+  }
   ngOnChanges(changes: SimpleChanges): void {
     throw new Error('Method not implemented.');
   }
