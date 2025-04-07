@@ -40,6 +40,8 @@ import { ChildComponent } from './child/child.component';
 import { RatingComponent } from './rating/rating.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { AppTextareaComponent } from './app-textarea/app-textarea.component';
+import { CapitalDirective } from './capital.directive';
+import { BalancePipe } from './balance.pipe';
 
 
 @NgModule({
@@ -80,6 +82,8 @@ import { AppTextareaComponent } from './app-textarea/app-textarea.component';
     RatingComponent,
     StudentDetailsComponent,
     AppTextareaComponent,
+    CapitalDirective,
+    BalancePipe,
    
   ],
   imports: [
